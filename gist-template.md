@@ -25,6 +25,8 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ### Anchors
 
+^ and $ are both anchors in this regex. 
+
 ### Quantifiers
 
 ### OR Operator
