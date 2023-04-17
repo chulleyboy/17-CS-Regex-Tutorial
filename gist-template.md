@@ -19,27 +19,27 @@ This  tutorial will explain the regular expression `/^([a-z0-9_\.-]+)@([\da-z\.-
 
 ### Anchors
 
-^ and $ are both anchors in this regex. ^ signifies that the regex will search for phrases starting with whatever comes after it, while $ signifies that the regex will search for phrases ending with whatever preceded it. These anchors are used to determine what parts of the regex should determine the start or end of what it searches for.
+`^` and `$` are both anchors in this regex. `^` signifies that the regex will search for phrases starting with whatever comes after it, while `$` signifies that the regex will search for phrases ending with whatever preceded it. These anchors are used to determine what parts of the regex should determine the start or end of what it searches for.
 
 ### Quantifiers
 
-both + and {2,6} are quantifiers in this regex. the + quantifier means that the phrase must match the provided pattern 1 or more times and is used to determine that the part of the email before and after the @ symbol exsist. the {2,6} means that the phrase must match the pattern from 2 to 6 times and is used to determine that the final part of the email after the period is 2-6 characters long.
+both `+` and `{2,6}` are quantifiers in this regex. the `+` quantifier means that the phrase must match the provided pattern 1 or more times and is used to determine that the part of the email before and after the @ symbol exsist. the `{2,6}` means that the phrase must match the pattern from 2 to 6 times and is used to determine that the final part of the email after the period is 2-6 characters long.
 
 ### Character Classes
 
-a-z, 0-9, amd \d are all character classes in this regex. a-z means that it can contain any lower case letter while 0-9 and \d are both different ways of specifying it can contain any numerical digit. These are used so that the regex can contain any letters and numbers in the sections of the email before and after the @ symbol, and only alphabetic characters after the period towards the end of the email.
+`a-z`, `0-9`, amd `\d` are all character classes in this regex. `a-z` means that it can contain any lower case letter while `0-9` and `\d` are both different ways of specifying it can contain any numerical digit. These are used so that the regex can contain any letters and numbers in the sections of the email before and after the @ symbol, and only alphabetic characters after the period towards the end of the email.
 
 ### Character Escapes
 
-\ can be used as a character escape which causes a special character to be interpretted as a literal character instead. This regex uses \. so that the periods are interpreted as literral because they would otherwise signify any character type.
+`\` can be used as a character escape which causes a special character to be interpretted as a literal character instead. This regex uses `\.` so that the periods are interpreted as literral because they would otherwise signify any character type.
 
 ### Grouping and Capturing
 
-() are used for seperating the regen into sections which must be found one after another. In our regex this is used to determine the section of the email before the @, the section after the @ but before the period, and the the secion after the period all seperately and in order.
+`()` are used for seperating the regen into sections which must be found one after another. In our regex this is used to determine the section of the email before the @, the section after the @ but before the period, and the the secion after the period all seperately and in order.
 
 ### Bracket Expressions
 
-bracket expressions are used to create a character group where the string the regex searches for can be met with any of the contained characters. The email regex uses [a-z] and [0-9] to allow any lowercase alphabetic or numberic characters to be used in the main sections of the email (the final section only had [a-z] so numbers are not allowed).
+bracket expressions are used to create a character group where the string the regex searches for can be met with any of the contained characters. The email regex uses `[a-z]` and `[0-9]` to allow any lowercase alphabetic or numberic characters to be used in the main sections of the email (the final section only had `[a-z]` so numbers are not allowed).
 
 ## Author
 
