@@ -23,7 +23,7 @@ This  tutorial will explain the regular expression `/^([a-z0-9_\.-]+)@([\da-z\.-
 
 ### Quantifiers
 
-+ and {2,6} are both quantifiers in this regex. the + quantifier means that the phrase must match the provided pattern 1 or more times and is used to determine that the part of the email before and after the @ symbol exsist. the {2,6} means that the phrase must match the pattern from 2 to 6 times and is used to determine that the final part of the email after the period is 2-6 characters long.
+both + and {2,6} are quantifiers in this regex. the + quantifier means that the phrase must match the provided pattern 1 or more times and is used to determine that the part of the email before and after the @ symbol exsist. the {2,6} means that the phrase must match the pattern from 2 to 6 times and is used to determine that the final part of the email after the period is 2-6 characters long.
 
 ### Character Classes
 
@@ -35,7 +35,7 @@ a-z, 0-9, amd \d are all character classes in this regex. a-z means that it can 
 
 ### Grouping and Capturing
 
-parrenthesis () are used for seperating the regen into sections which must be found one after another. In our regex this is used to determine the section of the email before the @, the section after the @ but before the period, and the the secion after the period all seperately and in order.
+() are used for seperating the regen into sections which must be found one after another. In our regex this is used to determine the section of the email before the @, the section after the @ but before the period, and the the secion after the period all seperately and in order.
 
 ### Bracket Expressions
 
