@@ -35,7 +35,7 @@ a-z, 0-9, amd \d are all character classes in this regex. a-z means that it can 
 
 ### Grouping and Capturing
 
-() is used for seperating the regen into sections which must be found one after another. In our regex this is used to determine the section of the email before the @, the section after the @ but before the period, and the the secion after the period all seperately and in order.
+parrenthesis () are used for seperating the regen into sections which must be found one after another. In our regex this is used to determine the section of the email before the @, the section after the @ but before the period, and the the secion after the period all seperately and in order.
 
 ### Bracket Expressions
 
